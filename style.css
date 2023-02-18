@@ -1,0 +1,66 @@
+/* Popup styles */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 999;
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.popup-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.popup-name {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.popup-price {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.popup-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.popup-content button {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 10px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Hide scrollbar */
+body {
+  overflow: hidden;
+}

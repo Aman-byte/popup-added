@@ -1,21 +1,338 @@
-<div class="product-content">
-  <img src="product-image.jpg" alt="Product Image" class="product-image">
-  <h2 class="product-name">Product Name</h2>
-  <p class="product-price">$19.99</p>
-  <p class="product-description">Product Description</p>
-  <button class="add-to-cart">Add to Cart</button>
-  <button class="buy-now">Buy Now</button>
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Keyboards</title>
+  <link rel="stylesheet" href="keebsytles.css">
+</head>
+
+<body>
+
+  <div class="background">
+    <div class="background-image"></div>
+  </div>
+
+  <header>
+    <a href="index.html">
+      <h1 id="heading">KeysExpedite™</h1>
+    </a>
+  </header>
+
+  <nav class="main-nav">
+
+    <ul>
+      <!-- look that the store thing give it a drop down menu instead of the .html file -->
+      <li>
+        <!-- <a href="/store.html" target="_blank">Store</a>  -->
+
+
+        <!-- Dropdown Button  -->
+        <div class="dropdown">
+          <!-- <button class="dropbtn">Shop ⇓</button> -->
+          <a href="/store.html" target="_blank">Store ⇓</a>
+
+          <div class="dropdown-content">
+            <!-- used hash to prevent refresh -->
+            <!-- place the path inside the href -->
+            <a href="#">Keyboard</a>
+            <a href="../switches/switches.html">Switches</a>
+            <a href="../mice/mice.html">Mice</a>
+          </div>
+        </div>
+      </li>
+
+
+      <li><a href="navbar/blogs.html" target="_blank">Blogs</a></li>
+      <li><a href="navbar/contact.html" target="_blank">Contact Us</a></li>
+      <li><a href="navbar/account/accounts.html" target="_blank">My Account</a></li>
+    </ul>
+  </nav>
+
+  <section class="products">
+    <div class="container">
+      <h1 class="lg-title">Keyboards with offers</h1>
+      <p class=text-light>These are pre-build aka ready to use keyboards. Featuring various sizes like 80% TKL etc, and
+        brands like logitech razer royal kludge GMMK</p>
+    </div>
+  </section>
+
+
+  <!--buttons for various filters  -->
+  <div class="filter">
+    <hr>
+    <span><strong>Filters: </span>
+    <!-- <button>Stock Status</button> -->
+    <div class="dropdown1">
+      <button class="">Stock Status</button>
+      <div class="dropdown-content1">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+
+    <!-- <button>Price</button> -->
+    <div class="dropdown1">
+      <button class="Price">Price</button>
+      <div class="dropdown-content1">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+
+  <!-- <button>Product Type</button> -->
+  <div class="dropdown1">
+    <button class="">Product Type</button>
+    <div class="dropdown-content1">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+
+  <!-- <button>Sort By</button> -->
+  <div class="dropdown1">
+    <button class="Sort by">Sort by</button>
+    <div class="dropdown-content1">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+  </div>
+  <hr>
 </div>
 
-<!-- Popup window -->
-<div class="popup-overlay">
-  <div class="popup-content">
-    <span class="close">&times;</span>
-    <img src="product-image.jpg" alt="Product Image" class="popup-image">
-    <h2 class="popup-name">Product Name</h2>
-    <p class="popup-price">$19.99</p>
-    <p class="popup-description">Product Description</p>
-    <button class="add-to-cart">Add to Cart</button>
-    <button class="buy-now">Buy Now</button>
-  </div>
+  <div class="product-items">
+    <!-- single product -->
+    <div class="product-content">
+      <div class="product-img">
+        <img src="keybs-images/customkeeb1.jpg" alt="product image"
+             onclick="showDescription()">
+  <div class="description-popup" id="descriptionPopup">
+    <div class="description-content">
+      <div class="card">
+  <img src="/w3images/jeans3.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>Tailored Jeans</h1>
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+  <p><button>Add to Cart</button></p>
+  <p><button>Buy Now</button></p>
+  
 </div>
+      <button onclick="hideDescription()">Close</button>
+    </div>
+  </div>
+        
+        
+        <h2>The mountain <h2>
+            <span class="price-tag">$1000.00</span> <br>
+
+            <!-- <button class="image-button">
+              <img src="button.png" alt="Button Image">
+            </button> -->
+            
+      </div>
+    </div>
+    <!-- end of single product  -->
+    <div class="product-content">
+      <div class="product-img">
+        <img src="keybs-images/GMK Demon Sword.jpg" alt="product image1">
+        <h2>The mountain 1<h2>
+            <span class="price-tag">$10680.00</span> <br>
+           
+            <button class="image-button">
+              <img src="button.png" alt="Button Image">
+            </button>
+            
+      </div>
+    </div>
+    <!-- single product -->
+    <div class="product-content">
+      <div class="product-img">
+        <img src="keybs-images/keeb3.jpg" alt="product image">
+        <h2>The mountain <h2>
+            <span class="price-tag">$1000.00</span> <br>
+
+            <button class="image-button">
+              <img src="button.png" alt="Button Image">
+            </button>
+            
+      </div>
+    </div>
+    <!-- end of single product  -->
+    <!-- single product -->
+    <div class="product-content">
+      <div class="product-img">
+        <img src="keybs-images/keeb4.jpg" alt="product image">
+        <h2>The mountain <h2>
+            <span class="price-tag">$1000.00</span> <br>
+
+            <button class="image-button">
+              <img src="button.png" alt="Button Image">
+            </button>
+            
+      </div>
+    </div>
+    <!-- end of single product  -->
+    <!-- single product -->
+    <div class="product-content">
+      <div class="product-img">
+        <img src="keybs-images/keeb5.jpg" alt="product image">
+        <h2>The mountain <h2>
+            <span class="price-tag">$1000.00</span> <br>
+
+            <button class="image-button">
+              <img src="button.png" alt="Button Image">
+            </button>
+            
+      </div>
+    </div>
+    <!-- end of single product  -->
+    <!-- single product -->
+    <div class="product-content">
+      <div class="product-img">
+        <img src="keybs-images/keeb6.jpg" alt="product image">
+        <h2>The mountain <h2>
+            <span class="price-tag">$1000.00</span> <br>
+
+            <button class="image-button">
+              <img src="button.png" alt="Button Image">
+            </button>
+            
+      </div>
+    </div>
+    <!-- end of single product  -->
+    <!-- single product -->
+    <div class="product-content">
+      <div class="product-img">
+        <img src="keybs-images/keeb7.jpg" alt="product image">
+        <h2>The mountain <h2>
+            <span class="price-tag">$1000.00</span> <br>
+
+            <button class="image-button">
+              <img src="button.png" alt="Button Image">
+            </button>
+            
+      </div>
+    </div>
+    <!-- end of single product  -->
+    <!-- single product -->
+    <div class="product-content">
+      <div class="product-img">
+        <img src="keybs-images/keeb8.jpg" alt="product image">
+        <h2>The mountain <h2>
+            <span class="price-tag">$1000.00</span> <br>
+
+            <button class="image-button">
+              <img src="button.png" alt="Button Image">
+            </button>
+            
+      </div>
+    </div>
+    <!-- end of single product  -->
+    <!-- single product -->
+    <div class="product-content">
+      <div class="product-img">
+        <img src="keybs-images/keeb9.jpg" alt="product image">
+        <h2>The mountain <h2>
+            <span class="price-tag">$1000.00</span> <br>
+
+            <button class="image-button">
+              <img src="button.png" alt="Button Image">
+            </button>
+            
+      </div>
+    </div>
+    <!-- end of single product  -->
+    <!-- single product -->
+    <div class="product-content">
+      <div class="product-img">
+        <img src="keybs-images/keeb10.jpg" alt="product image">
+        <h2>The mountain <h2>
+            <span class="price-tag">$1000.00</span> <br>
+
+            <button class="image-button">
+              <img src="button.png" alt="Button Image">
+            </button>
+            
+      </div>
+    </div>
+    <!-- end of single product  -->
+  </div>
+
+  <footer>
+    <div class="column">
+      <h3>Follow us</h3>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+    <div class="column">
+      <h3>Information</h3>
+      <ul>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Privacy policy</a></li>
+      </ul>
+    </div>
+    <div class="column">
+      <h3>Address</h3>
+      <p>123 Main Street<br>Anytown, USA 12345</p>
+    </div>
+    <div class="column">
+      <h3>Newsletter</h3>
+      <form>
+        <input type="text" placeholder="Email address">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+    <div class="column">
+      <img src="Subtract.png" alt="Footer image">
+    </div>
+    <div class="copy-right">
+      <p>Copyrighted @2022-2023 KeysExpediteTM</p>
+    </div>
+  </footer>
+  
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- to do arrange the blocks in a gird
+make a popup product description
+check out the text description in this folder -->
+
+
+
+
+
+
+
+
+<!-- display: inline-block;
+    text-align: center;
+    border:  10px solid black;
+    /* 501px for the 1px white box which idk comes from where */
+    max-width: 501px;
+    /* box-sizing: 500px; */ -->

@@ -1,66 +1,389 @@
-/* Popup styles */
-.popup-overlay {
+/* doing a css reset */
+head, body, ul, li, h1, h2, h6, a, form, hr,footer{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    text-align: center ;
+}
+html{
+    margin: 0;
+    padding: 0;
+}
+
+/* body{
+    background-color: #444;
+} */
+
+body {
+    background-image: url(bg2.png);
+    background-repeat: repeat-y;
+    background-size: cover;
+    animation: scroll 30s linear infinite;
+    width: 100%;
+  }
+  
+  @keyframes scroll {
+    /* from {background-position: 0 0;}
+    to {background-position: 0 100%;} */
+
+    from  {background-position: 0 100%;}
+    to {background-position: 0 0;}
+}
+  
+
+header{
+    background-color: black;
+    text-align: center;
+    position: static;
+    z-index: 1;
+    width: 100%;
+}
+
+header h1{
+    /* so that is doesn't interfere with rest of the header elements */
+    display: inline-block;
+    color: white;
+    border: 4px solid white;
+    margin: 2px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 9px;
+}
+
+
+nav{
+    background-color: black;
+	position: static;
+    top: 78px;
+    margin-top: -4px;
+    }
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+
+}
+nav li{
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+nav a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    display: block;
+    padding: 10px;
+  }
+
+nav a:hover{
+background-color: white;
+color: black;
+}
+
+nav ul{
+    display: flex;
+   
+}
+
+nav li{
+flex: 1 1 0;
+/* border: 1px solid white ; */
+}
+
+
+img{
+    width: 400px;
+    height: 300px;
+    object-fit: fill;
+}
+
+h2{
+  padding: 10px;
+}
+
+span{
+  padding: 10px;
+}
+.product-content{
+    display: inline-block;
+    text-align: center;
+    /* gave white border for spacing */
+    /* border: 5px solid white; */
+    color: white;
+    text-align: justify;
+}
+.price-tag{
+    color: lightgreen;
+}
+
+ 
+/* The container <div> - needed to position the dropdown content
+.dropdown {
+  position: relative;
+  display: inline-block;
+} */
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  background-color: black;
+  color: white;
+  padding: 12px 118px;
+  text-decoration: none;
+  display: block;
+}
+
+/* /* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: white;
+color: black;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.products{
+    background-color: aqua;
+    padding: 5px;
+
+}
+.products h1{
+    padding: 10px;
+    font-size: 40px;
+}
+
+.dropdown1{
+    display: inline-block;
+}
+
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+/* Links inside the dropdown */
+.dropdown-content1 a {
+  background-color: black;
+  color: white;
+  padding: 12px 118px;
+  text-decoration: none;
+  display: block;
+}
+
+/* /* Change color of dropdown links on hover */
+.dropdown-content1 a:hover {background-color: white;
+color: black;}
+
+/* Show the dropdown menu on hover */
+.dropdown1:hover .dropdown-content1 {display: block;}
+
+.filter span{
+    font-size: 20px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #000;
+    color: #A52A2A;  
+  }
+  
+  h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }   
+    
+    li {
+      margin-bottom: 5px;
+    }
+    
+    a {
+      color: #ff0000;
+      text-decoration: none;
+    }
+    
+    p {
+    margin: 0;
+    color: #A52A2A;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 5px;
+  }
+  
+  button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    /* margin-top: 10px; */
+    margin-left: auto;
+    margin-right: 0;
+    cursor: pointer;
+  }
+  
+  img {
+    object-fit: cover;
+  }
+  
+  .copy-right {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .copy-right p {
+    color: #fff;
+  }
+
+
+  .product-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px;
+  }
+  
+  .product-content{
+    
+    height: 500px;
+    margin-bottom: 20px;
+    background-color: black;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+
+  .image-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .image-button img {
+    width: 100%;
+    height: 60px;
+   margin-top: 20px;
+    
+  }
+  
+  .image-button:active img {
+    animation: shrink 0.2s linear; /* Apply the animation on click */
+  }
+  
+  @keyframes shrink {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.9); /* Shrink the image to 90% */
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+.column{
+  display: block;
+  padding-left: 30px;
+  padding-right: 0px;
+}
+  .column img{
+    width: auto;
+    height: 300px;
+  }
+  .product {
+  position: relative;
+}
+
+.description-popup {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  display: none;
-  z-index: 999;
 }
 
-.popup-content {
+.description-content {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
-  max-width: 600px;
-  background-color: #fff;
+  background-color: white;
   padding: 20px;
   text-align: center;
 }
 
-.popup-image {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
+.description-content h3 {
+  margin-top: 0;
 }
 
-.popup-name {
-  font-size: 24px;
-  margin-top: 20px;
-}
-
-.popup-price {
-  font-size: 20px;
-  margin-top: 10px;
+.description-content p {
   margin-bottom: 20px;
 }
 
-.popup-description {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.popup-content button {
+.description-content button {
   display: block;
-  width: 100%;
+  margin: 0 auto;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
-  margin: 0 auto 10px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
 }
 
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 24px;
-  font-weight: bold;
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
   cursor: pointer;
+  width: 100%;
+  font-size: 18px;
 }
 
-/* Hide scrollbar */
-body {
-  overflow: hidden;
+.card button:hover {
+  opacity: 0.7;
 }
